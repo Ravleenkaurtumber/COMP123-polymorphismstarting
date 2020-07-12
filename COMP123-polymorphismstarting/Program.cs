@@ -6,7 +6,11 @@ namespace COMP123_polymorphismstarting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GameObject player = new GameObject("Player");
+            // player.transform.position = new Vector2D();
+            Console.WriteLine(player.ToString());
+
+            Console.ReadLine();
         }
     }
 }
