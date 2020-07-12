@@ -16,9 +16,10 @@ namespace COMP123_polymorphismstarting
 
         }
         //PUBLIC METHODS
-        public override void FireBullet()
+        public override float FireBullet()
         {
             Console.WriteLine("Firing FAT Bullet");
+            return 40.0f;
         }
     }
 }

@@ -18,9 +18,12 @@ namespace COMP123_polymorphismstarting
         }
         //PRIVATE METHODS
         //PUBLIC METHODS
-        public virtual void FireBullet()
+        public virtual float FireBullet()
         {
+
             Console.WriteLine("FiringBullet");
+            return 20.0f;
         }
+
     }
 }
