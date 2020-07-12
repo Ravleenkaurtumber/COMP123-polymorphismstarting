@@ -21,7 +21,7 @@ namespace COMP123_polymorphismstarting
         public virtual float FireBullet()
         {
 
-            Console.WriteLine("FiringBullet");
+            Console.WriteLine($"{Name} FiringBullet!");
             return 20.0f;
         }
 

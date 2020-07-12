@@ -8,7 +8,7 @@ namespace COMP123_polymorphismstarting
     {
         // PRIVTE INSTANCE MEMBERS
         private  string m_name;
-        private float m_health;
+        protected float m_health;
         //PUBLIC PROPERTIES
         public Transform transform { get; set; }
         public string Name
@@ -22,7 +22,7 @@ namespace COMP123_polymorphismstarting
                 m_name = value;
             }
         }
-        public  float Health
+        public virtual  float Health
         {
             get
             {
