@@ -4,7 +4,7 @@ using System.Text;
 
 namespace COMP123_polymorphismstarting
 {
-    class GameObject
+     abstract class GameObject
     {
         // PRIVTE INSTANCE MEMBERS
         private  string m_name;
@@ -45,6 +45,7 @@ namespace COMP123_polymorphismstarting
             Name = name;
             Health = health;
             m_initialize();
+            Start();
         }
         //PRIVATE METHODS
         private void  m_initialize()
@@ -60,6 +61,9 @@ namespace COMP123_polymorphismstarting
             outputstring += transform.ToString();
             return outputstring;
         }
-
+        //public abstrat  methods(must be overriden)
+        public abstract void Start();
+        public abstract void Update();
+public abstract void Reset();
     }
 }

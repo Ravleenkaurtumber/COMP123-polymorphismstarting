@@ -64,13 +64,13 @@ namespace COMP123_polymorphismstarting
         public Player()
            : base("Player")
         {
-            m_initialize();
+            
         }
         //PRIVATE METHODS
-        private void m_initialize()
+       /* private void m_initialize()
         {
             m_shieldslevel = 10.0f;
-        }
+        }*/
         //PUBLIC METHODS
         public void RaiseSheilds()
         {
@@ -83,6 +83,20 @@ namespace COMP123_polymorphismstarting
             Console.WriteLine("Lowering Shields");
             ShieldsRaised = false;
 
+        }
+        //public methods overridden
+        public override void Update()
+        {
+
+        }
+        public override void Start()
+        {
+            Console.WriteLine($"{GetType()}start method");
+            m_shieldslevel = 10.0f;
+        }
+        public override void Reset()
+        {
+            
         }
     }
 }
