@@ -87,6 +87,7 @@ namespace COMP123_polymorphismstarting
         //public methods overridden
         public override void Update()
         {
+            Console.WriteLine($"{GetType()}  was Updated");
 
         }
         public override void Start()

@@ -27,7 +27,8 @@ namespace COMP123_polymorphismstarting
         //must overridden(enemy derived directly from game object)
         public override void Update()
         {
-            
+            Console.WriteLine($"{GetType()}  was Updated");
+
         }
         public override void Start()
         {
